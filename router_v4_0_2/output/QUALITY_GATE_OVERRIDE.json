@@ -1,0 +1,12 @@
+{
+  "authorized": true,
+  "formal_result_eligible": false,
+  "observed_quality_failures_are_retained": true,
+  "production_checkpoint": false,
+  "quality_gates_enforced": false,
+  "quality_gates_passed": false,
+  "reason": "user_authorized_continue_after_nested_oof_review_20260729",
+  "routing_enabled": false,
+  "schema_version": "router_v4_0_2.quality_gate_override.v1",
+  "technical_gates_passed": true
+}

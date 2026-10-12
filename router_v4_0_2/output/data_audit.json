@@ -1,0 +1,32 @@
+{
+  "cif_training_rows": 1967,
+  "compatibility_key": "1c152111a8014729206d7d4a2620ecc69c92b16c3a967d6821801d08b12071f3",
+  "complete_panels": 500,
+  "conditional_cif": [
+    11,
+    33,
+    48,
+    33,
+    38
+  ],
+  "cost_training_rows": 3060,
+  "documents": 661,
+  "forbidden_model_fields_verified": true,
+  "formal_result_eligible": false,
+  "full_failures": 252,
+  "observed_candidate_rows": 3060,
+  "passed": true,
+  "policy_observed": [
+    500,
+    780,
+    780,
+    500,
+    500
+  ],
+  "production_checkpoint": false,
+  "questions": 780,
+  "routing_enabled": false,
+  "schema_version": "router_v4_0_2.data_audit.v1",
+  "testmini_overlap": 154,
+  "truncated": 102
+}

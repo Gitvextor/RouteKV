@@ -1,0 +1,44 @@
+{
+  "actions": [
+    {
+      "id": 0,
+      "name": "FULL",
+      "source_policy": "full_instrumented"
+    },
+    {
+      "id": 1,
+      "name": "SAFE_H2O_R100_I32",
+      "source_policy": "safe_h2o_r100_i32"
+    },
+    {
+      "id": 2,
+      "name": "SAFE_H2O_R080_I32",
+      "source_policy": "safe_h2o_r080_i32"
+    },
+    {
+      "id": 3,
+      "name": "SAFE_H2O_R060_I32",
+      "source_policy": "safe_h2o_r060_i32"
+    },
+    {
+      "id": 4,
+      "name": "SAFE_H2O_R040_I32",
+      "source_policy": "safe_h2o_r040_i32"
+    },
+    {
+      "id": 5,
+      "name": "SAFE_H2O_R020_I32",
+      "source_policy": "safe_h2o_r020_i32"
+    }
+  ],
+  "extension_rule": "additions or reorderings require a new action-space version",
+  "frozen": true,
+  "safety_target_order": [
+    "SAFE_H2O_R100_I32",
+    "SAFE_H2O_R080_I32",
+    "SAFE_H2O_R060_I32",
+    "SAFE_H2O_R040_I32",
+    "SAFE_H2O_R020_I32"
+  ],
+  "schema_version": "router_v4_0_0.action_space.v1"
+}

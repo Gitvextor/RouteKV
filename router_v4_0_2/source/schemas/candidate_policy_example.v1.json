@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "router_v4_0_2.candidate_policy_example.v1",
+  "title": "Router V4.0.2 candidate policy example",
+  "type": "object",
+  "required": [
+    "sample_id",
+    "document_hash",
+    "action_id",
+    "action_space_version",
+    "base80",
+    "policy_one_hot5",
+    "policy_order_coordinate",
+    "base80_x_policy_order",
+    "conditional_cif_target",
+    "cif_mask",
+    "peak_kv_ratio",
+    "cost_mask",
+    "context_truncated",
+    "routing_compatibility_key"
+  ],
+  "properties": {
+    "sample_id": {"type": "string"},
+    "document_hash": {"type": "string"},
+    "action_id": {"type": "integer", "minimum": 1, "maximum": 5},
+    "action_space_version": {"const": "router_v4_0_0.action_space.v1"},
+    "base80": {"type": "array", "minItems": 80, "maxItems": 80},
+    "policy_one_hot5": {"type": "array", "minItems": 5, "maxItems": 5},
+    "policy_order_coordinate": {"type": "number"},
+    "base80_x_policy_order": {"type": "array", "minItems": 80, "maxItems": 80},
+    "conditional_cif_target": {"type": "integer", "minimum": 0, "maximum": 1},
+    "cif_mask": {"type": "boolean"},
+    "peak_kv_ratio": {"type": "number"},
+    "cost_mask": {"type": "boolean"},
+    "context_truncated": {"type": "boolean"},
+    "routing_compatibility_key": {"type": "string"}
+  },
+  "additionalProperties": true
+}
+

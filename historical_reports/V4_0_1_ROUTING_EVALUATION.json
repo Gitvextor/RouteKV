@@ -1,0 +1,931 @@
+{
+  "artifact_kind": "nested_oof_quality_first_internal_pilot",
+  "complete_panel_rows": 500,
+  "complete_six_policy_metrics": {
+    "Fixed Full": {
+      "acceptable_count": 333,
+      "acceptable_rate": 0.666,
+      "aggregate_safe_peak_kv_saving": 0.0,
+      "compression_induced_failures": 0,
+      "full_fallback_rate": 1.0,
+      "h2o_route_rate": 0.0,
+      "mean_raw_peak_kv_saving": 0.0,
+      "mean_safe_peak_kv_saving": 0.0,
+      "policy_distribution": {
+        "FULL": 500
+      },
+      "unacceptable_count": 167
+    },
+    "Fixed R020_I32": {
+      "acceptable_count": 307,
+      "acceptable_rate": 0.614,
+      "aggregate_safe_peak_kv_saving": 0.21251220310823016,
+      "compression_induced_failures": 38,
+      "full_fallback_rate": 0.0,
+      "h2o_route_rate": 1.0,
+      "mean_raw_peak_kv_saving": 0.3674925640404118,
+      "mean_safe_peak_kv_saving": 0.19453973136974653,
+      "policy_distribution": {
+        "SAFE_H2O_R020_I32": 500
+      },
+      "unacceptable_count": 193
+    },
+    "Fixed R040_I32": {
+      "acceptable_count": 311,
+      "acceptable_rate": 0.622,
+      "aggregate_safe_peak_kv_saving": 0.2147527240975764,
+      "compression_induced_failures": 33,
+      "full_fallback_rate": 0.0,
+      "h2o_route_rate": 1.0,
+      "mean_raw_peak_kv_saving": 0.3613070151506556,
+      "mean_safe_peak_kv_saving": 0.19652800253544692,
+      "policy_distribution": {
+        "SAFE_H2O_R040_I32": 500
+      },
+      "unacceptable_count": 189
+    },
+    "Fixed R060_I32": {
+      "acceptable_count": 318,
+      "acceptable_rate": 0.636,
+      "aggregate_safe_peak_kv_saving": 0.18886015389559596,
+      "compression_induced_failures": 27,
+      "full_fallback_rate": 0.0,
+      "h2o_route_rate": 1.0,
+      "mean_raw_peak_kv_saving": 0.32104216622920795,
+      "mean_safe_peak_kv_saving": 0.17948495441884527,
+      "policy_distribution": {
+        "SAFE_H2O_R060_I32": 500
+      },
+      "unacceptable_count": 182
+    },
+    "Fixed R080_I32": {
+      "acceptable_count": 319,
+      "acceptable_rate": 0.638,
+      "aggregate_safe_peak_kv_saving": 0.13015486578096858,
+      "compression_induced_failures": 22,
+      "full_fallback_rate": 0.0,
+      "h2o_route_rate": 1.0,
+      "mean_raw_peak_kv_saving": 0.24825284720951332,
+      "mean_safe_peak_kv_saving": 0.13708482418886542,
+      "policy_distribution": {
+        "SAFE_H2O_R080_I32": 500
+      },
+      "unacceptable_count": 181
+    },
+    "Fixed R100_I32": {
+      "acceptable_count": 329,
+      "acceptable_rate": 0.658,
+      "aggregate_safe_peak_kv_saving": 0.06559890732914131,
+      "compression_induced_failures": 11,
+      "full_fallback_rate": 0.0,
+      "h2o_route_rate": 1.0,
+      "mean_raw_peak_kv_saving": 0.15140423701025726,
+      "mean_safe_peak_kv_saving": 0.08540729571070008,
+      "policy_distribution": {
+        "SAFE_H2O_R100_I32": 500
+      },
+      "unacceptable_count": 171
+    },
+    "Oracle": {
+      "acceptable_count": 333,
+      "acceptable_rate": 0.666,
+      "aggregate_safe_peak_kv_saving": 0.19897054275787218,
+      "compression_induced_failures": 0,
+      "full_fallback_rate": 0.524,
+      "h2o_route_rate": 0.476,
+      "mean_raw_peak_kv_saving": 0.1936564615572615,
+      "mean_safe_peak_kv_saving": 0.1936564615572615,
+      "policy_distribution": {
+        "FULL": 262,
+        "SAFE_H2O_R020_I32": 20,
+        "SAFE_H2O_R040_I32": 67,
+        "SAFE_H2O_R060_I32": 43,
+        "SAFE_H2O_R080_I32": 45,
+        "SAFE_H2O_R100_I32": 63
+      },
+      "unacceptable_count": 167
+    },
+    "frozen_conditional_mlp": {
+      "acceptable_count": 327,
+      "acceptable_rate": 0.654,
+      "aggregate_safe_peak_kv_saving": 0.019536342523814976,
+      "compression_induced_failures": 7,
+      "full_fallback_rate": 0.694,
+      "h2o_route_rate": 0.30600000000000005,
+      "mean_raw_peak_kv_saving": 0.062045355570950804,
+      "mean_safe_peak_kv_saving": 0.035757643758403006,
+      "policy_distribution": {
+        "FULL": 347,
+        "SAFE_H2O_R020_I32": 18,
+        "SAFE_H2O_R040_I32": 9,
+        "SAFE_H2O_R060_I32": 12,
+        "SAFE_H2O_R080_I32": 21,
+        "SAFE_H2O_R100_I32": 93
+      },
+      "unacceptable_count": 173
+    },
+    "legacy_absolute_linear": {
+      "acceptable_count": 330,
+      "acceptable_rate": 0.66,
+      "aggregate_safe_peak_kv_saving": 0.024454725710508884,
+      "compression_induced_failures": 5,
+      "full_fallback_rate": 0.644,
+      "h2o_route_rate": 0.356,
+      "mean_raw_peak_kv_saving": 0.07067219100057494,
+      "mean_safe_peak_kv_saving": 0.044749668167290195,
+      "policy_distribution": {
+        "FULL": 322,
+        "SAFE_H2O_R020_I32": 8,
+        "SAFE_H2O_R040_I32": 24,
+        "SAFE_H2O_R060_I32": 4,
+        "SAFE_H2O_R080_I32": 47,
+        "SAFE_H2O_R100_I32": 95
+      },
+      "unacceptable_count": 170
+    },
+    "partial_finetune_conditional": {
+      "acceptable_count": 327,
+      "acceptable_rate": 0.654,
+      "aggregate_safe_peak_kv_saving": 0.025737946967262282,
+      "compression_induced_failures": 7,
+      "full_fallback_rate": 0.66,
+      "h2o_route_rate": 0.33999999999999997,
+      "mean_raw_peak_kv_saving": 0.07380252503091325,
+      "mean_safe_peak_kv_saving": 0.047134684562754235,
+      "policy_distribution": {
+        "FULL": 330,
+        "SAFE_H2O_R020_I32": 24,
+        "SAFE_H2O_R040_I32": 21,
+        "SAFE_H2O_R060_I32": 21,
+        "SAFE_H2O_R080_I32": 18,
+        "SAFE_H2O_R100_I32": 86
+      },
+      "unacceptable_count": 173
+    }
+  },
+  "document_bootstrap": {
+    "aggregate_safe_saving_95ci": [
+      0.019084715226967343,
+      0.033908321630884426
+    ],
+    "compression_failures_95ci": [
+      2.0,
+      13.0
+    ],
+    "h2o_route_rate_95ci": [
+      0.2977867203219316,
+      0.3860113545816733
+    ]
+  },
+  "formal_result_eligible": false,
+  "gates": {
+    "acceptable_matches_fixed_full": false,
+    "aggregate_safe_saving_at_least_two_percent": true,
+    "compression_induced_failures_zero": false,
+    "h2o_route_rate_at_least_ten_percent": true,
+    "truncated_all_full": true
+  },
+  "interpretation_boundary": "same-campaign nested document-grouped OOF; the legacy V4.0.0 Final Test is exposed and is only a regression slice",
+  "outer_fold_metrics": {
+    "0": {
+      "Fixed Full": {
+        "acceptable_count": 68,
+        "acceptable_rate": 0.68,
+        "aggregate_safe_peak_kv_saving": 0.0,
+        "compression_induced_failures": 0,
+        "full_fallback_rate": 1.0,
+        "h2o_route_rate": 0.0,
+        "mean_raw_peak_kv_saving": 0.0,
+        "mean_safe_peak_kv_saving": 0.0,
+        "policy_distribution": {
+          "FULL": 100
+        },
+        "unacceptable_count": 32
+      },
+      "Primary": {
+        "acceptable_count": 67,
+        "acceptable_rate": 0.67,
+        "aggregate_safe_peak_kv_saving": 0.01868329507537214,
+        "compression_induced_failures": 1,
+        "full_fallback_rate": 0.68,
+        "h2o_route_rate": 0.31999999999999995,
+        "mean_raw_peak_kv_saving": 0.043197960713087034,
+        "mean_safe_peak_kv_saving": 0.041283304073785485,
+        "policy_distribution": {
+          "FULL": 68,
+          "SAFE_H2O_R080_I32": 2,
+          "SAFE_H2O_R100_I32": 30
+        },
+        "unacceptable_count": 33
+      },
+      "rows": 100
+    },
+    "1": {
+      "Fixed Full": {
+        "acceptable_count": 70,
+        "acceptable_rate": 0.7,
+        "aggregate_safe_peak_kv_saving": 0.0,
+        "compression_induced_failures": 0,
+        "full_fallback_rate": 1.0,
+        "h2o_route_rate": 0.0,
+        "mean_raw_peak_kv_saving": 0.0,
+        "mean_safe_peak_kv_saving": 0.0,
+        "policy_distribution": {
+          "FULL": 100
+        },
+        "unacceptable_count": 30
+      },
+      "Primary": {
+        "acceptable_count": 68,
+        "acceptable_rate": 0.68,
+        "aggregate_safe_peak_kv_saving": 0.004470356534379549,
+        "compression_induced_failures": 2,
+        "full_fallback_rate": 0.82,
+        "h2o_route_rate": 0.18000000000000005,
+        "mean_raw_peak_kv_saving": 0.03292012788511067,
+        "mean_safe_peak_kv_saving": 0.010791200228775121,
+        "policy_distribution": {
+          "FULL": 82,
+          "SAFE_H2O_R020_I32": 2,
+          "SAFE_H2O_R040_I32": 5,
+          "SAFE_H2O_R060_I32": 6,
+          "SAFE_H2O_R080_I32": 2,
+          "SAFE_H2O_R100_I32": 3
+        },
+        "unacceptable_count": 32
+      },
+      "rows": 100
+    },
+    "2": {
+      "Fixed Full": {
+        "acceptable_count": 66,
+        "acceptable_rate": 0.66,
+        "aggregate_safe_peak_kv_saving": 0.0,
+        "compression_induced_failures": 0,
+        "full_fallback_rate": 1.0,
+        "h2o_route_rate": 0.0,
+        "mean_raw_peak_kv_saving": 0.0,
+        "mean_safe_peak_kv_saving": 0.0,
+        "policy_distribution": {
+          "FULL": 100
+        },
+        "unacceptable_count": 34
+      },
+      "Primary": {
+        "acceptable_count": 64,
+        "acceptable_rate": 0.64,
+        "aggregate_safe_peak_kv_saving": 0.04379122227193355,
+        "compression_induced_failures": 2,
+        "full_fallback_rate": 0.52,
+        "h2o_route_rate": 0.48,
+        "mean_raw_peak_kv_saving": 0.1524832247775152,
+        "mean_safe_peak_kv_saving": 0.08751796889526427,
+        "policy_distribution": {
+          "FULL": 52,
+          "SAFE_H2O_R020_I32": 19,
+          "SAFE_H2O_R040_I32": 8,
+          "SAFE_H2O_R060_I32": 7,
+          "SAFE_H2O_R080_I32": 7,
+          "SAFE_H2O_R100_I32": 7
+        },
+        "unacceptable_count": 36
+      },
+      "rows": 100
+    },
+    "3": {
+      "Fixed Full": {
+        "acceptable_count": 63,
+        "acceptable_rate": 0.63,
+        "aggregate_safe_peak_kv_saving": 0.0,
+        "compression_induced_failures": 0,
+        "full_fallback_rate": 1.0,
+        "h2o_route_rate": 0.0,
+        "mean_raw_peak_kv_saving": 0.0,
+        "mean_safe_peak_kv_saving": 0.0,
+        "policy_distribution": {
+          "FULL": 100
+        },
+        "unacceptable_count": 37
+      },
+      "Primary": {
+        "acceptable_count": 62,
+        "acceptable_rate": 0.62,
+        "aggregate_safe_peak_kv_saving": 0.028856960385901242,
+        "compression_induced_failures": 1,
+        "full_fallback_rate": 0.52,
+        "h2o_route_rate": 0.48,
+        "mean_raw_peak_kv_saving": 0.08620176624549325,
+        "mean_safe_peak_kv_saving": 0.0478826626619296,
+        "policy_distribution": {
+          "FULL": 52,
+          "SAFE_H2O_R020_I32": 2,
+          "SAFE_H2O_R080_I32": 4,
+          "SAFE_H2O_R100_I32": 42
+        },
+        "unacceptable_count": 38
+      },
+      "rows": 100
+    },
+    "4": {
+      "Fixed Full": {
+        "acceptable_count": 66,
+        "acceptable_rate": 0.66,
+        "aggregate_safe_peak_kv_saving": 0.0,
+        "compression_induced_failures": 0,
+        "full_fallback_rate": 1.0,
+        "h2o_route_rate": 0.0,
+        "mean_raw_peak_kv_saving": 0.0,
+        "mean_safe_peak_kv_saving": 0.0,
+        "policy_distribution": {
+          "FULL": 100
+        },
+        "unacceptable_count": 34
+      },
+      "Primary": {
+        "acceptable_count": 66,
+        "acceptable_rate": 0.66,
+        "aggregate_safe_peak_kv_saving": 0.03109910438065211,
+        "compression_induced_failures": 1,
+        "full_fallback_rate": 0.76,
+        "h2o_route_rate": 0.24,
+        "mean_raw_peak_kv_saving": 0.05420954553336013,
+        "mean_safe_peak_kv_saving": 0.04819828695401671,
+        "policy_distribution": {
+          "FULL": 76,
+          "SAFE_H2O_R020_I32": 1,
+          "SAFE_H2O_R040_I32": 8,
+          "SAFE_H2O_R060_I32": 8,
+          "SAFE_H2O_R080_I32": 3,
+          "SAFE_H2O_R100_I32": 4
+        },
+        "unacceptable_count": 34
+      },
+      "rows": 100
+    }
+  },
+  "overall_common3_metrics": {
+    "Fixed Full": {
+      "acceptable_count": 528,
+      "acceptable_rate": 0.676923076923077,
+      "aggregate_safe_peak_kv_saving": 0.0,
+      "compression_induced_failures": 0,
+      "full_fallback_rate": 1.0,
+      "h2o_route_rate": 0.0,
+      "mean_raw_peak_kv_saving": 0.0,
+      "mean_safe_peak_kv_saving": 0.0,
+      "policy_distribution": {
+        "FULL": 780
+      },
+      "unacceptable_count": 252
+    },
+    "Fixed R060_I32": {
+      "acceptable_count": 501,
+      "acceptable_rate": 0.6423076923076924,
+      "aggregate_safe_peak_kv_saving": 0.18900035031964246,
+      "compression_induced_failures": 48,
+      "full_fallback_rate": 0.0,
+      "h2o_route_rate": 1.0,
+      "mean_raw_peak_kv_saving": 0.3246861570649702,
+      "mean_safe_peak_kv_saving": 0.18197789902114858,
+      "policy_distribution": {
+        "SAFE_H2O_R060_I32": 780
+      },
+      "unacceptable_count": 279
+    },
+    "Fixed R080_I32": {
+      "acceptable_count": 511,
+      "acceptable_rate": 0.6551282051282051,
+      "aggregate_safe_peak_kv_saving": 0.13427742218936223,
+      "compression_induced_failures": 33,
+      "full_fallback_rate": 0.0,
+      "h2o_route_rate": 1.0,
+      "mean_raw_peak_kv_saving": 0.24996134914018472,
+      "mean_safe_peak_kv_saving": 0.14183353509110885,
+      "policy_distribution": {
+        "SAFE_H2O_R080_I32": 780
+      },
+      "unacceptable_count": 269
+    },
+    "Oracle": {
+      "acceptable_count": 528,
+      "acceptable_rate": 0.676923076923077,
+      "aggregate_safe_peak_kv_saving": 0.1579336753949806,
+      "compression_induced_failures": 0,
+      "full_fallback_rate": 0.5294871794871795,
+      "h2o_route_rate": 0.4705128205128205,
+      "mean_raw_peak_kv_saving": 0.16641465088554275,
+      "mean_safe_peak_kv_saving": 0.16641465088554275,
+      "policy_distribution": {
+        "FULL": 413,
+        "SAFE_H2O_R060_I32": 198,
+        "SAFE_H2O_R080_I32": 169
+      },
+      "unacceptable_count": 252
+    },
+    "frozen_conditional_mlp": {
+      "acceptable_count": 524,
+      "acceptable_rate": 0.6717948717948717,
+      "aggregate_safe_peak_kv_saving": 0.006788168873422373,
+      "compression_induced_failures": 5,
+      "full_fallback_rate": 0.8807692307692307,
+      "h2o_route_rate": 0.11923076923076925,
+      "mean_raw_peak_kv_saving": 0.024476497793472624,
+      "mean_safe_peak_kv_saving": 0.01334364295851156,
+      "policy_distribution": {
+        "FULL": 687,
+        "SAFE_H2O_R060_I32": 38,
+        "SAFE_H2O_R080_I32": 55
+      },
+      "unacceptable_count": 256
+    },
+    "legacy_absolute_linear": {
+      "acceptable_count": 525,
+      "acceptable_rate": 0.6730769230769231,
+      "aggregate_safe_peak_kv_saving": 0.009676854323157236,
+      "compression_induced_failures": 4,
+      "full_fallback_rate": 0.8846153846153846,
+      "h2o_route_rate": 0.11538461538461542,
+      "mean_raw_peak_kv_saving": 0.02756706819493993,
+      "mean_safe_peak_kv_saving": 0.018661783137996605,
+      "policy_distribution": {
+        "FULL": 690,
+        "SAFE_H2O_R060_I32": 34,
+        "SAFE_H2O_R080_I32": 56
+      },
+      "unacceptable_count": 255
+    },
+    "partial_finetune_conditional": {
+      "acceptable_count": 524,
+      "acceptable_rate": 0.6717948717948717,
+      "aggregate_safe_peak_kv_saving": 0.010944585626056047,
+      "compression_induced_failures": 5,
+      "full_fallback_rate": 0.85,
+      "h2o_route_rate": 0.15000000000000002,
+      "mean_raw_peak_kv_saving": 0.03484053947192247,
+      "mean_safe_peak_kv_saving": 0.02095526618874082,
+      "policy_distribution": {
+        "FULL": 663,
+        "SAFE_H2O_R060_I32": 63,
+        "SAFE_H2O_R080_I32": 54
+      },
+      "unacceptable_count": 256
+    }
+  },
+  "passed": false,
+  "primary_failure_metrics": {
+    "FULL": {
+      "average_precision": 0.571844708841595,
+      "brier": 0.1895301035624928,
+      "f1": 0.525,
+      "failure_support": 252,
+      "observed_support": 780,
+      "precision": 0.40384615384615385,
+      "recall": 0.75,
+      "roc_auc": 0.6981571669071669
+    },
+    "SAFE_H2O_R020_I32": {
+      "average_precision": 0.20744490675977856,
+      "brier": 0.28461480140686035,
+      "f1": 0.23376623376623376,
+      "failure_support": 38,
+      "observed_support": 333,
+      "precision": 0.13989637305699482,
+      "recall": 0.7105263157894737,
+      "roc_auc": 0.6889384478144513
+    },
+    "SAFE_H2O_R040_I32": {
+      "average_precision": 0.18063072886715104,
+      "brier": 0.2621522843837738,
+      "f1": 0.215962441314554,
+      "failure_support": 33,
+      "observed_support": 333,
+      "precision": 0.12777777777777777,
+      "recall": 0.696969696969697,
+      "roc_auc": 0.665959595959596
+    },
+    "SAFE_H2O_R060_I32": {
+      "average_precision": 0.18609148993513638,
+      "brier": 0.25782087445259094,
+      "f1": 0.2108626198083067,
+      "failure_support": 48,
+      "observed_support": 528,
+      "precision": 0.12452830188679245,
+      "recall": 0.6875,
+      "roc_auc": 0.6937500000000001
+    },
+    "SAFE_H2O_R080_I32": {
+      "average_precision": 0.0875031214883559,
+      "brier": 0.18747779726982117,
+      "f1": 0.13215859030837004,
+      "failure_support": 33,
+      "observed_support": 528,
+      "precision": 0.07731958762886598,
+      "recall": 0.45454545454545453,
+      "roc_auc": 0.6062442607897154
+    },
+    "SAFE_H2O_R100_I32": {
+      "average_precision": 0.05031242743387455,
+      "brier": 0.11718278378248215,
+      "f1": 0.07692307692307693,
+      "failure_support": 11,
+      "observed_support": 333,
+      "precision": 0.04878048780487805,
+      "recall": 0.18181818181818182,
+      "roc_auc": 0.5392433653303219
+    }
+  },
+  "primary_variant": "partial_finetune_conditional",
+  "production_checkpoint": false,
+  "routing_enabled": false,
+  "rows": 780,
+  "safe_oracle_opportunity_capture": 0.12935556495205858,
+  "schema_version": "router_v4_0_1.nested_oof_evaluation.v1",
+  "slices": {
+    "category_CompLong": {
+      "Fixed Full": {
+        "acceptable_count": 13,
+        "acceptable_rate": 0.16666666666666666,
+        "aggregate_safe_peak_kv_saving": 0.0,
+        "compression_induced_failures": 0,
+        "full_fallback_rate": 1.0,
+        "h2o_route_rate": 0.0,
+        "mean_raw_peak_kv_saving": 0.0,
+        "mean_safe_peak_kv_saving": 0.0,
+        "policy_distribution": {
+          "FULL": 78
+        },
+        "unacceptable_count": 65
+      },
+      "Primary common3": {
+        "acceptable_count": 13,
+        "acceptable_rate": 0.16666666666666666,
+        "aggregate_safe_peak_kv_saving": 0.0,
+        "compression_induced_failures": 0,
+        "full_fallback_rate": 1.0,
+        "h2o_route_rate": 0.0,
+        "mean_raw_peak_kv_saving": 0.0,
+        "mean_safe_peak_kv_saving": 0.0,
+        "policy_distribution": {
+          "FULL": 78
+        },
+        "unacceptable_count": 65
+      },
+      "rows": 78
+    },
+    "category_CompShort": {
+      "Fixed Full": {
+        "acceptable_count": 179,
+        "acceptable_rate": 0.7649572649572649,
+        "aggregate_safe_peak_kv_saving": 0.0,
+        "compression_induced_failures": 0,
+        "full_fallback_rate": 1.0,
+        "h2o_route_rate": 0.0,
+        "mean_raw_peak_kv_saving": 0.0,
+        "mean_safe_peak_kv_saving": 0.0,
+        "policy_distribution": {
+          "FULL": 234
+        },
+        "unacceptable_count": 55
+      },
+      "Primary common3": {
+        "acceptable_count": 177,
+        "acceptable_rate": 0.7564102564102564,
+        "aggregate_safe_peak_kv_saving": 0.03845494832433782,
+        "compression_induced_failures": 3,
+        "full_fallback_rate": 0.7735042735042735,
+        "h2o_route_rate": 0.22649572649572647,
+        "mean_raw_peak_kv_saving": 0.053199747813564874,
+        "mean_safe_peak_kv_saving": 0.02946524078690101,
+        "policy_distribution": {
+          "FULL": 181,
+          "SAFE_H2O_R060_I32": 23,
+          "SAFE_H2O_R080_I32": 30
+        },
+        "unacceptable_count": 57
+      },
+      "rows": 234
+    },
+    "category_SimpLong": {
+      "Fixed Full": {
+        "acceptable_count": 139,
+        "acceptable_rate": 0.594017094017094,
+        "aggregate_safe_peak_kv_saving": 0.0,
+        "compression_induced_failures": 0,
+        "full_fallback_rate": 1.0,
+        "h2o_route_rate": 0.0,
+        "mean_raw_peak_kv_saving": 0.0,
+        "mean_safe_peak_kv_saving": 0.0,
+        "policy_distribution": {
+          "FULL": 234
+        },
+        "unacceptable_count": 95
+      },
+      "Primary common3": {
+        "acceptable_count": 139,
+        "acceptable_rate": 0.594017094017094,
+        "aggregate_safe_peak_kv_saving": 0.0,
+        "compression_induced_failures": 0,
+        "full_fallback_rate": 1.0,
+        "h2o_route_rate": 0.0,
+        "mean_raw_peak_kv_saving": 0.0,
+        "mean_safe_peak_kv_saving": 0.0,
+        "policy_distribution": {
+          "FULL": 234
+        },
+        "unacceptable_count": 95
+      },
+      "rows": 234
+    },
+    "category_SimpShort": {
+      "Fixed Full": {
+        "acceptable_count": 197,
+        "acceptable_rate": 0.8418803418803419,
+        "aggregate_safe_peak_kv_saving": 0.0,
+        "compression_induced_failures": 0,
+        "full_fallback_rate": 1.0,
+        "h2o_route_rate": 0.0,
+        "mean_raw_peak_kv_saving": 0.0,
+        "mean_safe_peak_kv_saving": 0.0,
+        "policy_distribution": {
+          "FULL": 234
+        },
+        "unacceptable_count": 37
+      },
+      "Primary common3": {
+        "acceptable_count": 195,
+        "acceptable_rate": 0.8333333333333334,
+        "aggregate_safe_peak_kv_saving": 0.04415280251113862,
+        "compression_induced_failures": 2,
+        "full_fallback_rate": 0.7264957264957265,
+        "h2o_route_rate": 0.27350427350427353,
+        "mean_raw_peak_kv_saving": 0.06293538375951002,
+        "mean_safe_peak_kv_saving": 0.04038564650890172,
+        "policy_distribution": {
+          "FULL": 170,
+          "SAFE_H2O_R060_I32": 40,
+          "SAFE_H2O_R080_I32": 24
+        },
+        "unacceptable_count": 39
+      },
+      "rows": 234
+    },
+    "cohort_new200": {
+      "Fixed Full": {
+        "acceptable_count": 139,
+        "acceptable_rate": 0.695,
+        "aggregate_safe_peak_kv_saving": 0.0,
+        "compression_induced_failures": 0,
+        "full_fallback_rate": 1.0,
+        "h2o_route_rate": 0.0,
+        "mean_raw_peak_kv_saving": 0.0,
+        "mean_safe_peak_kv_saving": 0.0,
+        "policy_distribution": {
+          "FULL": 200
+        },
+        "unacceptable_count": 61
+      },
+      "Primary common3": {
+        "acceptable_count": 139,
+        "acceptable_rate": 0.695,
+        "aggregate_safe_peak_kv_saving": 0.0,
+        "compression_induced_failures": 0,
+        "full_fallback_rate": 1.0,
+        "h2o_route_rate": 0.0,
+        "mean_raw_peak_kv_saving": 0.0,
+        "mean_safe_peak_kv_saving": 0.0,
+        "policy_distribution": {
+          "FULL": 200
+        },
+        "unacceptable_count": 61
+      },
+      "rows": 200
+    },
+    "cohort_new500": {
+      "Fixed Full": {
+        "acceptable_count": 333,
+        "acceptable_rate": 0.666,
+        "aggregate_safe_peak_kv_saving": 0.0,
+        "compression_induced_failures": 0,
+        "full_fallback_rate": 1.0,
+        "h2o_route_rate": 0.0,
+        "mean_raw_peak_kv_saving": 0.0,
+        "mean_safe_peak_kv_saving": 0.0,
+        "policy_distribution": {
+          "FULL": 500
+        },
+        "unacceptable_count": 167
+      },
+      "Primary common3": {
+        "acceptable_count": 329,
+        "acceptable_rate": 0.658,
+        "aggregate_safe_peak_kv_saving": 0.017144230127882465,
+        "compression_induced_failures": 5,
+        "full_fallback_rate": 0.766,
+        "h2o_route_rate": 0.23399999999999999,
+        "mean_raw_peak_kv_saving": 0.05435124157619904,
+        "mean_safe_peak_kv_saving": 0.03269021525443567,
+        "policy_distribution": {
+          "FULL": 383,
+          "SAFE_H2O_R060_I32": 63,
+          "SAFE_H2O_R080_I32": 54
+        },
+        "unacceptable_count": 171
+      },
+      "rows": 500
+    },
+    "cohort_old80": {
+      "Fixed Full": {
+        "acceptable_count": 56,
+        "acceptable_rate": 0.7,
+        "aggregate_safe_peak_kv_saving": 0.0,
+        "compression_induced_failures": 0,
+        "full_fallback_rate": 1.0,
+        "h2o_route_rate": 0.0,
+        "mean_raw_peak_kv_saving": 0.0,
+        "mean_safe_peak_kv_saving": 0.0,
+        "policy_distribution": {
+          "FULL": 80
+        },
+        "unacceptable_count": 24
+      },
+      "Primary common3": {
+        "acceptable_count": 56,
+        "acceptable_rate": 0.7,
+        "aggregate_safe_peak_kv_saving": 0.0,
+        "compression_induced_failures": 0,
+        "full_fallback_rate": 1.0,
+        "h2o_route_rate": 0.0,
+        "mean_raw_peak_kv_saving": 0.0,
+        "mean_safe_peak_kv_saving": 0.0,
+        "policy_distribution": {
+          "FULL": 80
+        },
+        "unacceptable_count": 24
+      },
+      "rows": 80
+    },
+    "legacy_exposed_final100": {
+      "Fixed Full": {
+        "acceptable_count": 65,
+        "acceptable_rate": 0.65,
+        "aggregate_safe_peak_kv_saving": 0.0,
+        "compression_induced_failures": 0,
+        "full_fallback_rate": 1.0,
+        "h2o_route_rate": 0.0,
+        "mean_raw_peak_kv_saving": 0.0,
+        "mean_safe_peak_kv_saving": 0.0,
+        "policy_distribution": {
+          "FULL": 100
+        },
+        "unacceptable_count": 35
+      },
+      "Primary common3": {
+        "acceptable_count": 63,
+        "acceptable_rate": 0.63,
+        "aggregate_safe_peak_kv_saving": 0.01760870139127224,
+        "compression_induced_failures": 2,
+        "full_fallback_rate": 0.69,
+        "h2o_route_rate": 0.31000000000000005,
+        "mean_raw_peak_kv_saving": 0.05397581445528269,
+        "mean_safe_peak_kv_saving": 0.03861886515968091,
+        "policy_distribution": {
+          "FULL": 69,
+          "SAFE_H2O_R060_I32": 16,
+          "SAFE_H2O_R080_I32": 15
+        },
+        "unacceptable_count": 37
+      },
+      "rows": 100
+    },
+    "not_testmini_overlap": {
+      "Fixed Full": {
+        "acceptable_count": 426,
+        "acceptable_rate": 0.6805111821086262,
+        "aggregate_safe_peak_kv_saving": 0.0,
+        "compression_induced_failures": 0,
+        "full_fallback_rate": 1.0,
+        "h2o_route_rate": 0.0,
+        "mean_raw_peak_kv_saving": 0.0,
+        "mean_safe_peak_kv_saving": 0.0,
+        "policy_distribution": {
+          "FULL": 626
+        },
+        "unacceptable_count": 200
+      },
+      "Primary common3": {
+        "acceptable_count": 422,
+        "acceptable_rate": 0.6741214057507987,
+        "aggregate_safe_peak_kv_saving": 0.008582780423719738,
+        "compression_induced_failures": 4,
+        "full_fallback_rate": 0.8690095846645367,
+        "h2o_route_rate": 0.1309904153354633,
+        "mean_raw_peak_kv_saving": 0.02821397778467266,
+        "mean_safe_peak_kv_saving": 0.017133838963270615,
+        "policy_distribution": {
+          "FULL": 544,
+          "SAFE_H2O_R060_I32": 47,
+          "SAFE_H2O_R080_I32": 35
+        },
+        "unacceptable_count": 204
+      },
+      "rows": 626
+    },
+    "not_truncated": {
+      "Fixed Full": {
+        "acceptable_count": 505,
+        "acceptable_rate": 0.7448377581120944,
+        "aggregate_safe_peak_kv_saving": 0.0,
+        "compression_induced_failures": 0,
+        "full_fallback_rate": 1.0,
+        "h2o_route_rate": 0.0,
+        "mean_raw_peak_kv_saving": 0.0,
+        "mean_safe_peak_kv_saving": 0.0,
+        "policy_distribution": {
+          "FULL": 678
+        },
+        "unacceptable_count": 173
+      },
+      "Primary common3": {
+        "acceptable_count": 501,
+        "acceptable_rate": 0.7389380530973452,
+        "aggregate_safe_peak_kv_saving": 0.015654663074194053,
+        "compression_induced_failures": 5,
+        "full_fallback_rate": 0.827433628318584,
+        "h2o_route_rate": 0.17256637168141598,
+        "mean_raw_peak_kv_saving": 0.04008203656061876,
+        "mean_safe_peak_kv_saving": 0.024107828358728375,
+        "policy_distribution": {
+          "FULL": 561,
+          "SAFE_H2O_R060_I32": 63,
+          "SAFE_H2O_R080_I32": 54
+        },
+        "unacceptable_count": 177
+      },
+      "rows": 678
+    },
+    "testmini_overlap": {
+      "Fixed Full": {
+        "acceptable_count": 102,
+        "acceptable_rate": 0.6623376623376623,
+        "aggregate_safe_peak_kv_saving": 0.0,
+        "compression_induced_failures": 0,
+        "full_fallback_rate": 1.0,
+        "h2o_route_rate": 0.0,
+        "mean_raw_peak_kv_saving": 0.0,
+        "mean_safe_peak_kv_saving": 0.0,
+        "policy_distribution": {
+          "FULL": 154
+        },
+        "unacceptable_count": 52
+      },
+      "Primary common3": {
+        "acceptable_count": 102,
+        "acceptable_rate": 0.6623376623376623,
+        "aggregate_safe_peak_kv_saving": 0.021613829006207008,
+        "compression_induced_failures": 1,
+        "full_fallback_rate": 0.7727272727272727,
+        "h2o_route_rate": 0.2272727272727273,
+        "mean_raw_peak_kv_saving": 0.06177708243437947,
+        "mean_safe_peak_kv_saving": 0.036489119715652156,
+        "policy_distribution": {
+          "FULL": 119,
+          "SAFE_H2O_R060_I32": 16,
+          "SAFE_H2O_R080_I32": 19
+        },
+        "unacceptable_count": 52
+      },
+      "rows": 154
+    },
+    "truncated": {
+      "Fixed Full": {
+        "acceptable_count": 23,
+        "acceptable_rate": 0.22549019607843138,
+        "aggregate_safe_peak_kv_saving": 0.0,
+        "compression_induced_failures": 0,
+        "full_fallback_rate": 1.0,
+        "h2o_route_rate": 0.0,
+        "mean_raw_peak_kv_saving": 0.0,
+        "mean_safe_peak_kv_saving": 0.0,
+        "policy_distribution": {
+          "FULL": 102
+        },
+        "unacceptable_count": 79
+      },
+      "Primary common3": {
+        "acceptable_count": 23,
+        "acceptable_rate": 0.22549019607843138,
+        "aggregate_safe_peak_kv_saving": 0.0,
+        "compression_induced_failures": 0,
+        "full_fallback_rate": 1.0,
+        "h2o_route_rate": 0.0,
+        "mean_raw_peak_kv_saving": 0.0,
+        "mean_safe_peak_kv_saving": 0.0,
+        "policy_distribution": {
+          "FULL": 102
+        },
+        "unacceptable_count": 79
+      },
+      "rows": 102
+    }
+  }
+}

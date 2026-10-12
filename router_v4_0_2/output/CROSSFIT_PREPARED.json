@@ -1,0 +1,6 @@
+{
+  "document_leakage": 0,
+  "fold_manifest_sha256": "234d81d98b0d94edc4f14c0b8481abe978e69957d66b3c3ffcacb44000596990",
+  "passed": true,
+  "schema_version": "router_v4_0_2.crossfit_prepared.v1"
+}

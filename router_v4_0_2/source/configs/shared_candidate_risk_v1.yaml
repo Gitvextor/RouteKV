@@ -1,0 +1,77 @@
+schema_version: router_v4_0_2.config.v1
+run_id: qwen35_4b_docmath_shared_candidate_risk_v1
+
+status:
+  artifact_kind: shared_candidate_risk_internal_development
+  routing_enabled: false
+  production_checkpoint: false
+  formal_result_eligible: false
+
+inputs:
+  source_dataset: G:/2026.08_KV_Cache_Research/codex/router_v4_0_1/outputs/qwen35_4b_docmath_nested_oof_quality_first_v1/conditional_dataset.parquet
+  source_dataset_sha256: 0a50530fc727cb235aeb8e7790e20a306b81fdad53de9d149cf97805b5a7ea86
+  outer_fold_manifest: G:/2026.08_KV_Cache_Research/codex/router_v4_0_1/outputs/qwen35_4b_docmath_nested_oof_quality_first_v1/nested_fold_manifest.parquet
+  outer_fold_manifest_sha256: f08538d1c2c5676702d5a82596055ec0778e56a4ec01c89d0d6c6524fcdeac23
+  input_provenance: G:/2026.08_KV_Cache_Research/codex/router_v4_0_1/outputs/qwen35_4b_docmath_nested_oof_quality_first_v1/input_provenance.json
+  input_provenance_sha256: 9bf79cad4955b234fe8fd0621127f682ae52cf26398395a68b4eb28ab254bc63
+  historical_evaluation: G:/2026.08_KV_Cache_Research/codex/router_v4_0_1/outputs/qwen35_4b_docmath_nested_oof_quality_first_v1/routing_evaluation.json
+
+expected:
+  questions: 780
+  documents: 661
+  complete_panels: 500
+  policy_observed: [500, 780, 780, 500, 500]
+  conditional_cif: [11, 33, 48, 33, 38]
+  full_failures: 252
+  truncated: 102
+  testmini_overlap: 154
+
+split:
+  outer_folds: 5
+  inner_folds: 3
+  seed: 42
+  reuse_frozen_outer_folds: true
+
+model:
+  base_dimension: 80
+  risk_dimension: 166
+  cost_dimension: 22
+  cost_hidden: 16
+  action_space_version: router_v4_0_0.action_space.v1
+  policy_order_coordinates: [0.0, 0.2, 0.4, 0.6, 0.8]
+
+training:
+  optimizer: AdamW
+  learning_rate: 1.0e-3
+  weight_decay: 1.0e-2
+  batch_size_questions: 32
+  batch_size_candidates: 128
+  epochs: 50
+  gradient_clip_norm: 1.0
+  bootstrap_members: 10
+  bootstrap_seeds: [42, 43, 44, 45, 46, 47, 48, 49, 50, 51]
+  maximum_pos_weight: 20.0
+  cost_loss_weight: 0.25
+
+calibration:
+  ucb_z: 1.645
+  grid_points: 31
+
+decision:
+  min_expected_saving: 0.05
+  max_bootstrap_std: 0.10
+  tie_tolerance: 0.01
+  monotone_prefix_risk: true
+  truncated_fallback_full: true
+  allow_h2o_rescue: false
+
+acceptance:
+  maximum_compression_induced_failures: 0
+  minimum_aggregate_safe_saving: 0.0
+  require_positive_safe_saving: true
+  require_both_panels: true
+  enforce_quality_gates: false
+  quality_gate_override_reason: user_authorized_continue_after_nested_oof_review_20260729
+
+output:
+  root: G:/2026.08_KV_Cache_Research/codex/router_v4_0_2/outputs/qwen35_4b_docmath_shared_candidate_risk_v1

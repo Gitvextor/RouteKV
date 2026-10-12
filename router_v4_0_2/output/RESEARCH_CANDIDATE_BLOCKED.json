@@ -1,0 +1,15 @@
+{
+  "failed_gates": [
+    "complete6.acceptable_not_below_fixed_full",
+    "complete6.compression_induced_failures_zero",
+    "common3.acceptable_not_below_fixed_full",
+    "common3.compression_induced_failures_zero"
+  ],
+  "formal_result_eligible": false,
+  "production_checkpoint": false,
+  "reason": "nested_oof_safety_or_gain_gates_failed",
+  "routing_enabled": false,
+  "schema_version": "router_v4_0_2.research_candidate_blocked.v1",
+  "superseded_by": "QUALITY_GATE_OVERRIDE.json",
+  "superseded_for_research_training": true
+}

@@ -1,0 +1,26 @@
+{
+  "behavior_fields": {
+    "action_space_version": "router_v4_0_0.action_space.v1",
+    "algorithm_runtime_fingerprint": "3657c3c89367e0489feb0f0938b8769175c159aacc5997e6b3c846143a61363f",
+    "evaluation_protocol": "docmath_local_regex_plus_official_numeric_tolerance_v1",
+    "model_asset_fingerprint": "eb248621577f5f0387c90af3c7a9f3c442c247dc86de11b9810178d905cfa5e9"
+  },
+  "cohort_protocol_fingerprints": {
+    "new200": [
+      "8ceb3379c52696c4da01c62a39579372bdc18a461a867e3981aee63ce53ed84c"
+    ],
+    "new500": [
+      "8ed8db224595a79db2512dcb8abfa6aa34a8441e98f64a4d57ba20d43b576b86"
+    ],
+    "old80": [
+      "931fc12f0b4a2719ea8992668ee54adf991018407c7da88e1876cfc2ef79a431"
+    ]
+  },
+  "compatible": true,
+  "hardware_runtime_fingerprint": [
+    "2810f170013cfcf8a7cd07993352da2b7a22738518f9b5d02726152dfd380f23"
+  ],
+  "provenance_fields_are_not_decision_inputs": true,
+  "routing_compatibility_key": "1c152111a8014729206d7d4a2620ecc69c92b16c3a967d6821801d08b12071f3",
+  "schema_version": "router_v4_0_2.routing_compatibility.v1"
+}

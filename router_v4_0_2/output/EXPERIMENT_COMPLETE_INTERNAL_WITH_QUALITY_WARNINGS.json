@@ -1,0 +1,10 @@
+{
+  "formal_result_eligible": false,
+  "passed": true,
+  "production_checkpoint": false,
+  "quality_gates_enforced": false,
+  "quality_gates_passed": false,
+  "routing_enabled": false,
+  "schema_version": "router_v4_0_2.experiment_status.v1",
+  "technical_gates_passed": true
+}

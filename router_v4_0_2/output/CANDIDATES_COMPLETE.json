@@ -1,0 +1,8 @@
+{
+  "candidates": 3060,
+  "cif_training_rows": 1967,
+  "cost_training_rows": 3060,
+  "passed": true,
+  "questions": 780,
+  "schema_version": "router_v4_0_2.candidates_complete.v1"
+}

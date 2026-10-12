@@ -1,0 +1,6 @@
+{
+  "checkpoint": "cuda_tiny_smoke\\ensemble.pt",
+  "device": "cuda",
+  "passed": true,
+  "schema_version": "router_v4_0_2.cuda_tiny_smoke.v1"
+}

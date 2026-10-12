@@ -1,0 +1,8 @@
+{
+  "frozen_outer_rows": 780,
+  "input_provenance_sha256": "9bf79cad4955b234fe8fd0621127f682ae52cf26398395a68b4eb28ab254bc63",
+  "outer_fold_manifest_sha256": "f08538d1c2c5676702d5a82596055ec0778e56a4ec01c89d0d6c6524fcdeac23",
+  "schema_version": "router_v4_0_2.input_provenance.v1",
+  "source_dataset_sha256": "0a50530fc727cb235aeb8e7790e20a306b81fdad53de9d149cf97805b5a7ea86",
+  "source_rows": 780
+}

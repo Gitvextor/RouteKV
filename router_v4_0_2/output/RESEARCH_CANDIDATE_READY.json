@@ -1,0 +1,11 @@
+{
+  "checkpoint": "research_candidate\\ensemble.pt",
+  "external_blind_test_required": true,
+  "formal_result_eligible": false,
+  "production_checkpoint": false,
+  "quality_gate_override": "QUALITY_GATE_OVERRIDE.json",
+  "quality_gates_passed": false,
+  "research_only": true,
+  "routing_enabled": false,
+  "schema_version": "router_v4_0_2.research_candidate_ready.v1"
+}

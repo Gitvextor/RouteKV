@@ -1,0 +1,47 @@
+{
+  "calibration": {
+    "full_platt": {
+      "coefficient": 0.9589833738029544,
+      "intercept": -0.6773369961769843
+    },
+    "schema_version": "router_v4_0_2.shared_policy_calibration.v1",
+    "shared_policy_platt": {
+      "coefficients": [
+        0.8736539800370646,
+        -0.23589038992769323,
+        0.05329353645882904,
+        0.1137955089137085,
+        0.12042409976927336,
+        0.05378009919938037
+      ],
+      "intercept": 0.11305744157114224
+    }
+  },
+  "calibration_summary": {
+    "aggregate_safe_peak_kv_saving": 0.0052663135901109825,
+    "compressed_rows": 31,
+    "compression_induced_failures": 0,
+    "decision": {
+      "cif_ucb_threshold": 0.7551181316375732,
+      "full_ucb_threshold": 0.1968233585357666,
+      "max_bootstrap_std": 0.1,
+      "min_expected_saving": 0.05,
+      "routing_compatibility_key": "1c152111a8014729206d7d4a2620ecc69c92b16c3a967d6821801d08b12071f3",
+      "tie_tolerance": 0.01
+    },
+    "h2o_rescue_rows": 0,
+    "method": "crossfit_bootstrap_ucb_zero_cif_no_rescue",
+    "schema_version": "router_v4_0_2.zero_cif_rule_summary.v1",
+    "unobserved_selected_rows": 0
+  },
+  "decision": {
+    "cif_ucb_threshold": 0.7551181316375732,
+    "full_ucb_threshold": 0.1968233585357666,
+    "max_bootstrap_std": 0.1,
+    "min_expected_saving": 0.05,
+    "routing_compatibility_key": "1c152111a8014729206d7d4a2620ecc69c92b16c3a967d6821801d08b12071f3",
+    "tie_tolerance": 0.01
+  },
+  "outer_fold": 3,
+  "schema_version": "router_v4_0_2.fold_rule.v1"
+}

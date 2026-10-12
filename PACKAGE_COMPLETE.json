@@ -1,0 +1,11 @@
+{
+    "schema_version":  "router_v4_0_2.team_handoff_package.v1",
+    "created_date":  "2026-07-30",
+    "files":  111,
+    "payload_bytes":  22554822,
+    "manifest_sha256":  "1876c9402ea6a95dbcb7059291d3f3b280c4fd69eabd8a656cb37198ab91989d",
+    "research_only":  true,
+    "routing_enabled":  false,
+    "production_checkpoint":  false,
+    "formal_result_eligible":  false
+}
